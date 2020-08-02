@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 <head>
-    
 
     <title>playlist by. tegvr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +21,7 @@
 	<meta name="twitter:player:width" content="480" />
 	<meta name="twitter:player:height" content="480" />
 
-
+    <script src="assets/nav.js"></script>
 
     <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" /> -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
@@ -32,15 +31,113 @@
     <link href="assets/pattern.css" rel="stylesheet" />
     <link href="assets/custom-style.css" rel="stylesheet" />
 </head>
+
 <body class="text-white" style="background-color: #1E1E1E">
     <div class="container relative mx-auto lg:w-1/3 pt-0">
-        
-        <section id="spotify" class="mb-8 pb-5 ">
+        <section id="tabs-id">
+            <nav class=" sticky top-0 shadow-md" style="background-color: #1E1E1E">
+                <div class="">
+                    <ul class="flex mb-0 list-none flex-wrap flex-row">
+                        <li class=" flex-auto text-center">
+                            <a class="text-sm font-bold uppercase px-5 py-4 border-b-2 border-teal-dark block leading-normal text-white "
+                                onclick="changeAtiveTab(event,'spotify')">
+                                <span class="fab font-normal text-green-600 opacity-100 fa-spotify mr-2"></span>
+                                Spotify
+                            </a>
+                        </li>
+                        <li class="  flex-auto text-center">
+                            <a class="text-sm font-bold uppercase px-5 py-4  block leading-normal text-gray-500"
+                                onclick="changeAtiveTab(event,'soundcloud')">
+                                <span class="fab font-normal opacity-25 text-orange-500 fa-soundcloud mr-2"></span>
+                                SoundCloud
+                            </a>
+                        </li>
+                        <li class="  flex-auto text-center">
+                            <a class="text-sm font-bold uppercase px-5 py-4 block leading-normal text-gray-500 "
+                                onclick="changeAtiveTab(event,'youtube')">
+                                <span class="fab font-normal opacity-25 text-red-700 fa-youtube mr-2"></span>
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="tab-content">
+                <div class="block" id="spotify">
+                    <section id="spotify" class="mb-8 pb-5 ">
             
-            <div class="">
-                <iframe src="https://open.spotify.com/embed/playlist/11IvXuxtgLc3NN1Z3PScZa" class="h-screen w-full" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <div class="">
+                            <iframe src="https://open.spotify.com/embed/playlist/11IvXuxtgLc3NN1Z3PScZa" class="h-screen w-full" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </section>
+                </div>
+                <div class="hidden" id="soundcloud">
+                    <section id="soundcloud">
+                        <div class="">
+                            <iframe width="100%" class=" h-screen" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1037701684&color=%231e1e1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                <a href="https://soundcloud.com/tegvr" title="TEGVR" target="_blank" style="color: #cccccc; text-decoration: none;">TEGVR</a> · <a href="https://soundcloud.com/tegvr/sets/chill" title="Chill Beats" target="_blank" style="color: #cccccc; text-decoration: none;">Chill Beats</a></div>
+            
+                        </div>
+                    </section>
+                </div>
+                <div class="hidden" id="youtube">
+                    <section id="youtube" class="pb-0">
+                        
+                        <div class="">
+                            <div class="flex items-center border-b-2 border-black-custom">
+                            <iframe class="h-32 w-48 block  " src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqkxS12bqJl144_bwLGtW62a" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="pl-4">
+                                <span class="font-bold">Playlist : Lo-fi</span>
+                                <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center border-b-2 border-black-custom">
+                            <iframe class="h-32 w-48 block" src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqlj6ddlVQb_1nBiztI0YMNb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="pl-4">
+                                <!-- Playlist :  Chill Hits -->
+                                <span class="font-bold">Playlist : Chill Hits</span>
+                                <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center border-b-2 border-black-custom">
+                            <iframe class="h-32 w-48 block" src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqluEoXfXYF7wPJK4puQwcJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="pl-4">
+                                
+                                <span class="font-bold">Playlist : Brainfood</span>
+                                <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center border-b-2 border-black-custom">
+                            <iframe class="h-32 w-48 block" src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqlyBZbuk6gt6cu9TA5xypyR" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="pl-4">
+                                <span class="font-bold">Playlist : Chill Tracks</span>
+                                <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </section>
+                </div>
             </div>
         </section>
+
+
+        <!-- <nav class=" sticky top-0 px-8 pt-2 shadow-md" style="background-color: #1E1E1E">
+            <div class="flex items-stretch">
+                <a class="text-center flex-1 no-underline text-teal-dark border-b-2 border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8" href="#">
+                    Spotify
+                </a>
+                <a class="flex-1 text-center no-underline text-grey-dark  border-teal-dark uppercase tracking-wide font-bold text-xs py-3 mr-8" href="#">
+                    SoundCloud
+                </a>
+                <a class="flex-1 text-center no-underline text-grey-dark  border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8" href="#">
+                    Youtube
+                </a>
+                
+            </div>
+       </nav> -->
+        
 
         <!-- <section id="tiktok" class="">
             <div class="w-full">
@@ -49,47 +146,10 @@
                  </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
         </section> -->
-        <section id="">
-            
-        </section>
-        <section id="youtube" class="px-2 mt-6 rounded-lg pb-0">
-            <div class="font-bold pt-5 pb-3 pl-3">
-                <div class="font-bold  text-white">
-                    <span class="fab fa-youtube items-center mr-2 text-xl"></span>
-                    More playlist on Youtube
-                </div>
-                
-            </div>
-            <div class="">
-
-            </div>
-            <div class="">
-                <div class="flex items-center border-b-2 border-t-2 border-black-custom">
-                <iframe class="h-32 w-48 block  " src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqkxS12bqJl144_bwLGtW62a" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="pl-4">
-                    <span class="font-bold">Playlist : Lo-fi</span>
-                    <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
-                </div>
-            </div>
-            <div class="flex items-center border-b-2 border-black-custom">
-                <iframe class="h-32 w-48 block" src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqlj6ddlVQb_1nBiztI0YMNb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="pl-4">
-                    <!-- Playlist :  Chill Hits -->
-                    <span class="font-bold">Playlist : Chill Hits</span>
-                    <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
-                </div>
-            </div>
-            <div class="flex items-center border-b-2 border-black-custom">
-                <iframe class="h-32 w-48 block" src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqluEoXfXYF7wPJK4puQwcJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="pl-4">
-                    
-                    <span class="font-bold">Playlist : Brainfood</span>
-                    <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
-                </div>
-            </div>
-            </div>
-            
-        </section>
+        
+       
+        
+        
 
         <section id="footer" class=" relative pt-20 pb-5">
             
@@ -107,11 +167,11 @@
                 <a href="http://instagram.com/tegvr" class="flex-1 text-center m-2">
                     <span class="fab fa-instagram text-2xl"></span>
                 </a>
-                <!-- <a href="http://twitter.com/in/tegvr" class="flex-1 text-center m-2">
-                    <span class="fab fa-linkedin text-2xl"></span>
-                </a> -->
-                <a href="http://facebook.com/tegvrx" class="flex-1 text-center m-2">
-                    <span class="fab fa-facebook text-2xl"></span>
+                <a href="https://open.spotify.com/playlist/11IvXuxtgLc3NN1Z3PScZa?si=1DiOPWReQ0O3XgsFqDFNrw" class="flex-1 text-center m-2">
+                    <span class="fab fa-spotify text-2xl"></span>
+                </a>
+                <a href="http://soundcloud.com/tegvr" class="flex-1 text-center m-2">
+                    <span class="fab fa-soundcloud text-2xl"></span>
                 </a>
                 <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg" class="flex-1 text-center m-2">
                     <span class="fab fa-youtube text-2xl"></span>
