@@ -1,0 +1,13 @@
+.bottom-shadow{
+    box-shadow: 0 5px 5px -5px #1E1E1E;
+}
+.pp{
+    bottom : -30px;
+}
+.border-black-custom{
+    border-color: rgba(0, 0, 0,.3);
+}
+
+.height-20rem{
+    height: 30rem;
+}

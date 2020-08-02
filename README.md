@@ -1,1 +1,1 @@
-My Cool Web Playlist using youtube API
+playlist.tegvr.com
