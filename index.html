@@ -35,7 +35,7 @@
 <body class="text-white" style="background-color: #1E1E1E">
     <div class="container relative mx-auto lg:w-1/3 pt-0">
         <section id="tabs-id">
-            <nav class=" sticky top-0 shadow-md" style="background-color: #1E1E1E">
+            <nav class=" sticky top-0 shadow-md z-10" style="background-color: #1E1E1E">
                 <!-- <div class=""> -->
                     <ul class="flex items-stretch m-0 ">
                         <li class=" flex-1 text-center">
@@ -64,25 +64,56 @@
             </nav>
             <div class="tab-content">
                 <div class="block" id="spotify">
-                    <section id="spotify" class="mb-8 pb-5 ">
+                    <section id="spotify" class="mb-2 pb-0 ">
             
                         <div class="">
                             <iframe src="https://open.spotify.com/embed/playlist/11IvXuxtgLc3NN1Z3PScZa" class="h-screen w-full" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </div>
+
+                        <div class="mb-4 mx-4 mt-6">
+                            <div class="shadow-md p-3 relative bg-indigo-900 rounded-full w-full  leading-none flex items-stretch" role="alert">
+                                <span class="fas fa-headphones absolute top-0 mt-2 uppercase px-2 py-1 text-base text-indigo-300 font-bold mr-3"></span>
+                                <span class="font-semibold flex-1 text-center self-center">TEGVR's Pick</span>
+                                <!-- <span class="fab fa-spotify absolute right-0 top-0 mt-2 uppercase px-2 py-1 text-base text-indigo-300 font-normal mr-3"></span> -->
+                                <!-- <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg> -->
+                            </div>
+                        </div>
+                        <!-- mokita clorblind -->
+                        <!-- <iframe src="https://open.spotify.com/embed/track/73qLaVz4R0EN3rFoaaSBzZ" class="w-full" height="520" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+                        <!-- cold -->
+                        <iframe src="https://open.spotify.com/embed/track/5jYe1mOKg5zUx0enf1DOdz" class="w-full" height="460" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <!-- <div class="mt-5 pl-2">
+                            <div class="font-bold">
+                                <span class="fas fa-headphones"></span>
+                                TEGVR'S Pick
+                            </div>
+                            <iframe src="https://open.spotify.com/embed/track/5jYe1mOKg5zUx0enf1DOdz" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div> -->
                     </section>
                 </div>
                 <div class="hidden" id="soundcloud">
-                    <section id="soundcloud">
+                    <section id="soundcloud" class="mb-2 pb-0">
                         <div class="">
                             <iframe width="100%" class=" h-screen" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1037701684&color=%231e1e1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                             <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
                                 <a href="https://soundcloud.com/tegvr" title="TEGVR" target="_blank" style="color: #cccccc; text-decoration: none;">TEGVR</a> · <a href="https://soundcloud.com/tegvr/sets/chill" title="Chill Beats" target="_blank" style="color: #cccccc; text-decoration: none;">Chill Beats</a></div>
             
                         </div>
+
+                        <div class="mb-4 mx-4 mt-6">
+                            <div class="shadow-md p-3 relative bg-indigo-900 rounded-full w-full  leading-none flex items-stretch" role="alert">
+                                <span class="fas fa-headphones absolute top-0 mt-2 uppercase px-2 py-1 text-base text-indigo-300 font-bold mr-3"></span>
+                                <span class="font-semibold flex-1 text-center self-center">TEGVR's Pick</span>
+                                <!-- <span class="fab fa-spotify absolute right-0 top-0 mt-2 uppercase px-2 py-1 text-base text-indigo-300 font-normal mr-3"></span> -->
+                                <!-- <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg> -->
+                            </div>
+                        </div>
+                        <iframe class="w-full" height="420" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/687118666&color=%231e1e1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/prodsworn" title="Swørn" target="_blank" style="color: #cccccc; text-decoration: none;">Swørn</a> · <a href="https://soundcloud.com/prodsworn/sworn-sorry-1" title="Swørn - Sorry" target="_blank" style="color: #cccccc; text-decoration: none;">Swørn - Sorry</a></div>
+                        
                     </section>
                 </div>
                 <div class="hidden" id="youtube">
-                    <section id="youtube" class="pb-0">
+                    <section id="youtube" class="mb-2 pb-0">
                         
                         <div class="">
                             <div class="flex items-center border-b-2 border-black-custom">
@@ -108,7 +139,7 @@
                                 <div class="italic text-xs"> <a href="https://www.youtube.com/channel/UCRHstDKCGWliLxJdxIcW-Jg">TEGVR</a></div>
                             </div>
                         </div>
-                        <div class="flex items-center border-b-2 border-black-custom">
+                        <div class="flex items-center border-b-0 border-black-custom">
                             <iframe class="h-32 w-48 block" src="https://www.youtube.com/embed/videoseries?list=PL8hbsR-gBZqlyBZbuk6gt6cu9TA5xypyR" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <div class="pl-4">
                                 <span class="font-bold">Playlist : Chill Tracks</span>
@@ -116,7 +147,15 @@
                             </div>
                         </div>
                         </div>
-                        
+                        <div class="mb-4 mx-4 mt-6">
+                            <div class="shadow-md p-3 relative bg-indigo-900 rounded-full w-full  leading-none flex items-stretch" role="alert">
+                                <span class="fas fa-headphones absolute top-0 mt-2 uppercase px-2 py-1 text-base text-indigo-300 font-bold mr-3"></span>
+                                <span class="font-semibold flex-1 text-center self-center">TEGVR's Pick</span>
+                                <!-- <span class="fab fa-spotify absolute right-0 top-0 mt-2 uppercase px-2 py-1 text-base text-indigo-300 font-normal mr-3"></span> -->
+                                <!-- <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg> -->
+                            </div>
+                        </div>
+                        <iframe class="w-full h-64" src="https://www.youtube.com/embed/RmibkOh25uY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
                 </div>
             </div>
@@ -151,9 +190,9 @@
         
         
 
-        <section id="footer" class=" relative pt-20 pb-5">
+        <section id="footer" class=" relative pt-10 pb-5 border-t-2 border-black-custom">
             
-            <a href="#" class="flex flex-col mb-16">
+            <a href="#" class="flex flex-col mb-10">
                 <div class="self-center mb-3">
                     <span class="fas fa-chevron-up text-xl"></span>
                 </div>
