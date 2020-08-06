@@ -7,6 +7,9 @@
 .border-black-custom{
     border-color: rgba(0, 0, 0,.3);
 }
+.border-black-custom-2{
+    border-color: rgba(0, 0, 0,.1);
+}
 
 .height-20rem{
     height: 30rem;
